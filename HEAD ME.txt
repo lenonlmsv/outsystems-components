@@ -1,0 +1,17 @@
+This component was made to help you to change between multiple stylesheets dinamically, depending on any parameters as needed. It's specially usefull to multitenant apps, changind the whole appearence based on it.
+
+Dynamic CSS allows you to chose which stylesheet you be applied on screen.
+
+If the user has 'Manager' role, apply "DCSS_ManagerStyle" stylesheet. If the user is not logged, apply "DCSS_NotLogged" stylesheet etc.
+
+After create the stylesheets to use in the screens/flows, follow the steps below:
+
+1) Change the stylesheets name and includes the leading "DCSS_" as those first characters (e.g. stylesheet 'myStyle' becomes 'DCSS_myStyle'). 'DCSS_' is used by the main script to identify the current stylesheet.
+
+2) Drag and drop the DCSS_Script client action into the OnRender event. Create the logic as you wish to implement. The DCSS_Script requires only one parameter: the fullname of the stylesheet to be applyed (e.g "DCSS_MyStylesheet"). Also can be implemented after server action validations. Use your imagination.
+
+3) If you need to apply to the whole application, insert the DCSS_Script inside the OnRender event of the Source Layout Block. Can be used inside any block as well.
+
+4) Take a look inside the example module!
+
+
