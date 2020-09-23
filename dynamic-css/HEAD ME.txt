@@ -1,3 +1,6 @@
+Available on OS Forge:
+https://www.outsystems.com/forge/component-overview/9433/dynamic-css
+
 This component was made to help you to change between multiple stylesheets dinamically, depending on any parameters as needed. It's specially usefull to multitenant apps, changind the whole appearence based on it.
 
 Dynamic CSS allows you to chose which stylesheet you be applied on screen.
